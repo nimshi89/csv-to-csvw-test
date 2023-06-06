@@ -4,7 +4,7 @@ name: Generate CSV-Ws from CSVs and qube configs
 on:
     push:
         branches:
-        - main # This workflow is triggered when committed to the main branch.
+        - stash_issue # This workflow is triggered when committed to the main branch.
 # Workflow action
 jobs:
     generate_csvw_from_csv_upload:
