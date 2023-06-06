@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+    <h3>CSV-Ws generated are as below. The latest commit id is cb6f0a09bb041681b90dcfed9e667333bbec78ee.</h3>
+    <div id="files-container"></div>
+    <script type="text/javascript">
+        var html_str = "<ul>";
+        var files = "|||out/new-file/colour.csv-metadata.json|||out/new-file/colour.csv-metadata.json_inspect_output.txt|||out/new-file/new-file.csv|||out/new-file/new-file.csv-metadata.json_inspect_output.txt|||out/new-file/colour.table.json|||out/new-file/colour.csv|||out/new-file/new-file.csv-metadata.json".split('|||');
+        files.shift()
+        files.sort()
+        files.forEach(function(file) {
+        file = file.replace("./","")
+        link = "https://nimshi89.github.io/csv-to-csvw-test/"+file
+        html_str += "<li>"+"<a href='"+ link + "'>"+file+"</a></li>";
+        });
+        html_str += "</ul>";
+        document.getElementById("files-container").innerHTML = html_str;
+    </script>
+    </body>
+</html>
